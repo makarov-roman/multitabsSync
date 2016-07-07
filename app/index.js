@@ -41,7 +41,7 @@ watchStorage();
 //$FlowIssue
 let cachedState = initialState;
 store.subscribe(()=> {
-	if (store.getState().equals(cachedState)) return console.log('equal') || void(0);
+	if (store.getState().equals(cachedState)) return void(0);
 	const result = patch(store.getState().toJS());
 	cachedState = fromJS(result.store);
 	id = result.id;

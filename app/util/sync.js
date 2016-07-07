@@ -1,6 +1,5 @@
 "use strict";
 export function patch(store: Object) {
-	console.log('patching');
 	let storageId = parseInt(localStorage.getItem('id'));
 
 	if (isNaN(storageId)) storageId = 0;
