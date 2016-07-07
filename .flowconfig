@@ -1,0 +1,23 @@
+
+[ignore]
+.*/node_modules/.*/test/
+.*/node_modules/fbjs/.*
+.*babylon
+.*babel
+
+[include]
+../apps/
+
+[libs]
+./flow/interfaces/
+
+[options]
+module.system.node.resolve_dirname=app
+module.name_mapper='.*\(.css\)' -> 'CSSModule'
+module.system=haste
+strip_root=true
+suppress_comment= \\(.\\|\n\\)*\\$FlowIssue
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+
+module.system.node.resolve_dirname=node_modules

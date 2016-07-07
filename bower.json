@@ -1,0 +1,14 @@
+{
+  "name": "react-webpack-assets",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Simon Smith"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "immutable": "^3.8.1"
+  }
+}
