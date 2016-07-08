@@ -53,11 +53,12 @@ function fetchFromStorage() {
 	if (result) {
 		id = result.id;
 		const immutableStore = fromJS(result.store);
+		cachedState = immutableStore;
 		store.dispatch({
 			type: HYDRATE_STATE,
 			state: immutableStore
 		});
-		cachedState = immutableStore
+
 	}
 }
 
